@@ -12,6 +12,14 @@
 		D5C695FA1CD621CD00C29AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C695F81CD621CD00C29AC6 /* Main.storyboard */; };
 		D5C695FC1CD621CD00C29AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C695FB1CD621CD00C29AC6 /* Assets.xcassets */; };
 		D5C695FF1CD621CD00C29AC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C695FD1CD621CD00C29AC6 /* LaunchScreen.storyboard */; };
+		D5C696071CD6369700C29AC6 /* ItunesTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696061CD6369700C29AC6 /* ItunesTrack.swift */; };
+		D5C696091CD8B73700C29AC6 /* ITunesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696081CD8B73700C29AC6 /* ITunesDataSource.swift */; };
+		D5C6960C1CD8BC2D00C29AC6 /* TunesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6960B1CD8BC2D00C29AC6 /* TunesTableViewController.swift */; };
+		D5C6960F1CD8C21400C29AC6 /* TunesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C6960E1CD8C21400C29AC6 /* TunesTableViewCell.swift */; };
+		D5C696221CD8DC6500C29AC6 /* DownloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696211CD8DC6500C29AC6 /* DownloadDataSource.swift */; };
+		D5C696241CD8DD2A00C29AC6 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696231CD8DD2A00C29AC6 /* Download.swift */; };
+		D5C696271CD9DAB900C29AC6 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696261CD9DAB900C29AC6 /* FileIO.swift */; };
+		D5C696291CDA277D00C29AC6 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C696281CDA277D00C29AC6 /* TrackCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		D5C695FB1CD621CD00C29AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C695FE1CD621CD00C29AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C696001CD621CD00C29AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C696061CD6369700C29AC6 /* ItunesTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesTrack.swift; sourceTree = "<group>"; };
+		D5C696081CD8B73700C29AC6 /* ITunesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesDataSource.swift; sourceTree = "<group>"; };
+		D5C6960B1CD8BC2D00C29AC6 /* TunesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunesTableViewController.swift; sourceTree = "<group>"; };
+		D5C6960E1CD8C21400C29AC6 /* TunesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunesTableViewCell.swift; sourceTree = "<group>"; };
+		D5C696211CD8DC6500C29AC6 /* DownloadDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadDataSource.swift; sourceTree = "<group>"; };
+		D5C696231CD8DD2A00C29AC6 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		D5C696261CD9DAB900C29AC6 /* FileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		D5C696281CDA277D00C29AC6 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,86 @@
 		D5C695F31CD621CD00C29AC6 /* ItunesTableViewSearch */ = {
 			isa = PBXGroup;
 			children = (
-				D5C695F41CD621CD00C29AC6 /* AppDelegate.swift */,
-				D5C695F61CD621CD00C29AC6 /* ViewController.swift */,
-				D5C695F81CD621CD00C29AC6 /* Main.storyboard */,
-				D5C695FB1CD621CD00C29AC6 /* Assets.xcassets */,
-				D5C695FD1CD621CD00C29AC6 /* LaunchScreen.storyboard */,
-				D5C696001CD621CD00C29AC6 /* Info.plist */,
+				D5C6960A1CD8BC1900C29AC6 /* Controllers */,
+				D5C696251CD9DAA800C29AC6 /* Utils */,
+				D5C696201CD8D91900C29AC6 /* Settings */,
+				D5C6961F1CD8D90E00C29AC6 /* Resources */,
+				D5C6961E1CD8D90200C29AC6 /* DataSources */,
+				D5C6961D1CD8D8F800C29AC6 /* Models */,
+				D5C6961A1CD8D1C800C29AC6 /* Layout */,
+				D5C6960D1CD8C1FE00C29AC6 /* Views */,
 			);
 			path = ItunesTableViewSearch;
+			sourceTree = "<group>";
+		};
+		D5C6960A1CD8BC1900C29AC6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5C6960B1CD8BC2D00C29AC6 /* TunesTableViewController.swift */,
+				D5C695F61CD621CD00C29AC6 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D5C6960D1CD8C1FE00C29AC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5C6960E1CD8C21400C29AC6 /* TunesTableViewCell.swift */,
+				D5C696281CDA277D00C29AC6 /* TrackCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D5C6961A1CD8D1C800C29AC6 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				D5C695FD1CD621CD00C29AC6 /* LaunchScreen.storyboard */,
+				D5C695F81CD621CD00C29AC6 /* Main.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		D5C6961D1CD8D8F800C29AC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5C696061CD6369700C29AC6 /* ItunesTrack.swift */,
+				D5C696231CD8DD2A00C29AC6 /* Download.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D5C6961E1CD8D90200C29AC6 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				D5C696081CD8B73700C29AC6 /* ITunesDataSource.swift */,
+				D5C696211CD8DC6500C29AC6 /* DownloadDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		D5C6961F1CD8D90E00C29AC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5C695FB1CD621CD00C29AC6 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D5C696201CD8D91900C29AC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D5C695F41CD621CD00C29AC6 /* AppDelegate.swift */,
+				D5C696001CD621CD00C29AC6 /* Info.plist */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		D5C696251CD9DAA800C29AC6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D5C696261CD9DAB900C29AC6 /* FileIO.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +223,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5C696091CD8B73700C29AC6 /* ITunesDataSource.swift in Sources */,
+				D5C696241CD8DD2A00C29AC6 /* Download.swift in Sources */,
+				D5C6960F1CD8C21400C29AC6 /* TunesTableViewCell.swift in Sources */,
 				D5C695F71CD621CD00C29AC6 /* ViewController.swift in Sources */,
+				D5C696071CD6369700C29AC6 /* ItunesTrack.swift in Sources */,
+				D5C696291CDA277D00C29AC6 /* TrackCell.swift in Sources */,
+				D5C6960C1CD8BC2D00C29AC6 /* TunesTableViewController.swift in Sources */,
+				D5C696271CD9DAB900C29AC6 /* FileIO.swift in Sources */,
+				D5C696221CD8DC6500C29AC6 /* DownloadDataSource.swift in Sources */,
 				D5C695F51CD621CD00C29AC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
