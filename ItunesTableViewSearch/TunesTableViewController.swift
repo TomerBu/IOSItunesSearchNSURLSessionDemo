@@ -161,51 +161,10 @@ extension TunesTableViewController : UISearchResultsUpdating{
     }
 }
 
-
-//extension TunesTableViewController : TrackCellDelegate{
-//    private func reloadCell(cell: TunesTableViewCell){
-//        if let indexPath = tableView.indexPathForCell(cell) {
-//            //tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: .Middle)
-//        }
-//    }
-//    
-//    func pauseTapped(cell: TunesTableViewCell){
-//        if let url = cell.data?.previewUrl{
-//            downloadDataSource.pause(url)
-//            reloadCell(cell)
-//        }
-//    }
-//    func resumeTapped(cell: TunesTableViewCell){
-//        if let url = cell.data?.previewUrl{
-//            downloadDataSource.resume(url)
-//            reloadCell(cell)
-//        }
-//    }
-//    func cancelTapped(cell: TunesTableViewCell){
-//        if let url = cell.data?.previewUrl{
-//            downloadDataSource.cancel(url)
-//            reloadCell(cell)
-//        }
-//    }
-//    func downloadTapped(cell: TunesTableViewCell){
-//        if let track = cell.data, url = track.previewUrl{
-//            downloadDataSource.download(url, delegate: { (download) in
-//                //print(download.progress)
-//                if let cell = self.cellForTrack(download){
-//                    self.reloadCell(cell)
-//                }
-//            })
-//            
-//            reloadCell(cell)
-//        }
-//    }
-//}
-
-
 extension TunesTableViewController : TrackDelegate{
     private func reloadCell(cell: TrackCell){
         if let indexPath = tableView.indexPathForCell(cell) {
-            tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: .Middle)
+            tableView.reloadRowsAtIndexPaths([NSIndexPath(forRow: indexPath.row, inSection: 0)], withRowAnimation: .None)
         }
     }
     
@@ -229,15 +188,20 @@ extension TunesTableViewController : TrackDelegate{
         }
     }
     func downloadTapped(cell: TrackCell){
+        UIView.animateWithDuration(0.1) { 
+            cell.downloadButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+            cell.downloadButton.alpha = 0
+        }
+        
         if let track = trackForCell(cell), url = track.previewUrl{
             downloadDataSource.download(url, delegate: { (download) in
                 //print(download.progress)
-                if let cell = self.cellForTrack(download){
-                    self.reloadCell(cell)
-                }
+                dispatch_async(dispatch_get_main_queue(), {
+                    if let cell = self.cellForTrack(download){
+                        self.reloadCell(cell)
+                    }
+                })
             })
-            
-            reloadCell(cell)
         }
     }
 }

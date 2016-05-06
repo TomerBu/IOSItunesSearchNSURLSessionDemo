@@ -35,153 +35,34 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TunesCell" id="igR-Q1-JFw" customClass="TunesTableViewCell" customModule="ItunesTableViewSearch" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="68"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="igR-Q1-JFw" id="BPj-hs-sHx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW7-C0-uzq">
-                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.98859398546541222" green="0.94773337196111829" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="So cool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yb-i8-r7C">
-                                            <rect key="frame" x="8" y="39" width="56" height="20"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.98859398546541222" green="0.94773337196111829" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIv-sg-knm" userLabel="Download">
-                                            <rect key="frame" x="211" y="21" width="72" height="27"/>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
-                                            <state key="normal" title="Download">
-                                                <color key="titleColor" red="0.70980392156862748" green="0.0" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="download:" destination="igR-Q1-JFw" eventType="touchUpInside" id="LRR-rM-uea"/>
-                                            </connections>
-                                        </button>
-                                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" horizontalCompressionResistancePriority="999" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="PaR-az-Zxz">
-                                            <rect key="frame" x="182" y="8" width="117" height="52"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-DA-SNp">
-                                                    <rect key="frame" x="0.0" y="11" width="55" height="30"/>
-                                                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
-                                                    <state key="normal" title="cancel">
-                                                        <color key="titleColor" red="0.81176470588235294" green="0.0" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="selected">
-                                                        <color key="titleColor" red="1" green="0.99940162919999997" blue="0.97641388360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="focused">
-                                                        <color key="titleColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="cancel:" destination="igR-Q1-JFw" eventType="touchUpInside" id="blr-p4-Xos"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-f2-ogw">
-                                                    <rect key="frame" x="68" y="11" width="49" height="30"/>
-                                                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="18"/>
-                                                    <state key="normal" title="pause">
-                                                        <color key="titleColor" red="0.81176470588235294" green="0.0" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="selected">
-                                                        <color key="titleColor" red="1" green="0.99940162919999997" blue="0.97641388360000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="highlighted">
-                                                        <color key="titleColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <state key="focused">
-                                                        <color key="titleColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="pause:" destination="igR-Q1-JFw" eventType="touchUpInside" id="aPx-gd-pze"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="mSz-f2-ogw" firstAttribute="leading" secondItem="PaR-az-Zxz" secondAttribute="leading" constant="8" id="9eM-y8-Tab"/>
-                                            </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="9eM-y8-Tab"/>
-                                                </mask>
-                                            </variation>
-                                        </stackView>
-                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HK5-0K-pYZ">
-                                            <rect key="frame" x="19" y="34" width="150" height="2"/>
-                                        </progressView>
-                                    </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstItem="7yb-i8-r7C" firstAttribute="leading" secondItem="BPj-hs-sHx" secondAttribute="leadingMargin" id="0ma-7k-Bi6"/>
-                                        <constraint firstItem="PaR-az-Zxz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GW7-C0-uzq" secondAttribute="trailing" constant="50" id="2ZC-TY-lIp"/>
-                                        <constraint firstItem="GW7-C0-uzq" firstAttribute="top" secondItem="BPj-hs-sHx" secondAttribute="topMargin" id="DRl-Be-X7p"/>
-                                        <constraint firstItem="fIv-sg-knm" firstAttribute="centerX" secondItem="PaR-az-Zxz" secondAttribute="centerX" id="Dii-KL-XAA"/>
-                                        <constraint firstItem="PaR-az-Zxz" firstAttribute="top" secondItem="BPj-hs-sHx" secondAttribute="topMargin" id="WAk-QN-Lwh"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="PaR-az-Zxz" secondAttribute="bottom" id="YMT-Fq-XeE"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="PaR-az-Zxz" secondAttribute="trailing" id="bNn-ZW-HPV"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="7yb-i8-r7C" secondAttribute="bottom" id="dZZ-lZ-uE1"/>
-                                        <constraint firstItem="PaR-az-Zxz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7yb-i8-r7C" secondAttribute="trailing" constant="50" id="iPX-1a-wyf"/>
-                                        <constraint firstItem="GW7-C0-uzq" firstAttribute="leading" secondItem="BPj-hs-sHx" secondAttribute="leadingMargin" id="lGI-JT-NDi"/>
-                                        <constraint firstItem="fIv-sg-knm" firstAttribute="centerY" secondItem="PaR-az-Zxz" secondAttribute="centerY" id="uTA-qz-azb"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="6"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="2"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="artist" destination="7yb-i8-r7C" id="azu-lH-w4v"/>
-                                    <outlet property="cancel" destination="Pdm-DA-SNp" id="zGO-Qy-zSw"/>
-                                    <outlet property="dlControlsStack" destination="PaR-az-Zxz" id="1Ee-dR-CBE"/>
-                                    <outlet property="download" destination="fIv-sg-knm" id="yVg-7l-VgA"/>
-                                    <outlet property="pause" destination="mSz-f2-ogw" id="i0c-JU-Acd"/>
-                                    <outlet property="progressBar" destination="HK5-0K-pYZ" id="fzo-vH-uDq"/>
-                                    <outlet property="title" destination="GW7-C0-uzq" id="Phx-Vt-Das"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="62" id="s9j-WP-NDT" customClass="TrackCell">
-                                <rect key="frame" x="0.0" y="160" width="320" height="62"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="100" id="s9j-WP-NDT" customClass="TrackCell" customModule="ItunesTableViewSearch">
+                                <rect key="frame" x="0.0" y="92" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s9j-WP-NDT" id="Lzh-ac-N1O">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-22-FS9">
-                                            <rect key="frame" x="14" y="29" width="196" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="14" y="29" width="196" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-HeavyItalic" family="Avenir Next Condensed" pointSize="14"/>
+                                            <color key="textColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8T-0x-Mg2">
                                             <rect key="frame" x="14" y="8" width="196" height="20"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-HeavyItalic" family="Avenir Next Condensed" pointSize="14"/>
+                                            <color key="textColor" red="0.98121042950000004" green="0.99853555350000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <progressView hidden="YES" opaque="NO" tag="40" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YPn-hK-Cr3">
-                                            <rect key="frame" x="14" y="52" width="196" height="2"/>
+                                            <rect key="frame" x="14" y="54.5" width="196" height="2"/>
+                                            <color key="tintColor" red="0.81176470588235294" green="0.0" blue="0.4823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZy-Rx-XGM">
-                                            <rect key="frame" x="264" y="9" width="48" height="30"/>
+                                            <rect key="frame" x="270" y="9" width="42" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBoldItalic" family="Avenir Next Condensed" pointSize="17"/>
                                             <state key="normal" title="Cancel">
+                                                <color key="titleColor" red="0.70980392156862748" green="0.0" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -189,8 +70,10 @@
                                             </connections>
                                         </button>
                                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmP-qG-ZWE">
-                                            <rect key="frame" x="214" y="9" width="42" height="30"/>
+                                            <rect key="frame" x="224" y="9" width="38" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBoldItalic" family="Avenir Next Condensed" pointSize="17"/>
                                             <state key="normal" title="Pause">
+                                                <color key="titleColor" red="0.70980392156862748" green="0.0" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -198,7 +81,7 @@
                                             </connections>
                                         </button>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100% of 1.35MB" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgF-y1-qyb">
-                                            <rect key="frame" x="227" y="44" width="84" height="14"/>
+                                            <rect key="frame" x="227" y="46.5" width="84" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -206,6 +89,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAZ-2j-WqR">
                                             <rect key="frame" x="234" y="9" width="69" height="30"/>
                                             <state key="normal" title="Download">
+                                                <color key="titleColor" red="0.75894018665158369" green="0.0014894336534771815" blue="0.46263625038484107" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -213,6 +97,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                     <constraints>
                                         <constraint firstItem="t8T-0x-Mg2" firstAttribute="leading" secondItem="Lzh-ac-N1O" secondAttribute="leading" constant="14" id="1p7-ZG-DBH"/>
@@ -235,6 +120,7 @@
                                         <constraint firstItem="aZy-Rx-XGM" firstAttribute="centerY" secondItem="WmP-qG-ZWE" secondAttribute="centerY" id="yJq-Rh-jca"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="artistLabel" destination="oLn-22-FS9" id="hiQ-vV-5eM"/>
                                     <outlet property="cancelButton" destination="aZy-Rx-XGM" id="7H1-Q7-jC6"/>
